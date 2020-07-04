@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fCy-HX-e1A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fCy-HX-e1A">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,20 +40,47 @@
                                     <action selector="logoutBtnAction:" destination="fCy-HX-e1A" eventType="touchUpInside" id="0be-2p-Qwv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZr-dx-Q85">
+                                <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.2784313725" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zb7-dd-bGq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYj-dD-cxd">
+                                <rect key="frame" x="20" y="70" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.69411764710000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go To Home"/>
+                                <connections>
+                                    <action selector="moveToHome:" destination="fCy-HX-e1A" eventType="touchUpInside" id="GfE-iv-OwX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="gKQ-w6-6Ae" firstAttribute="centerY" secondItem="FsD-vb-ZFw" secondAttribute="centerY" id="CcD-C7-GoW"/>
+                            <constraint firstItem="FsD-vb-ZFw" firstAttribute="trailing" secondItem="SZr-dx-Q85" secondAttribute="trailing" constant="20" id="OKE-Ux-oRR"/>
+                            <constraint firstItem="FsD-vb-ZFw" firstAttribute="trailing" secondItem="uYj-dD-cxd" secondAttribute="trailing" constant="20" id="UoL-u9-YvV"/>
                             <constraint firstItem="Xx4-WG-tdj" firstAttribute="top" secondItem="gKQ-w6-6Ae" secondAttribute="bottom" constant="50" id="XAm-VY-ne0"/>
+                            <constraint firstItem="uYj-dD-cxd" firstAttribute="top" secondItem="SZr-dx-Q85" secondAttribute="bottom" constant="20" id="aUT-Md-vbi"/>
                             <constraint firstItem="gKQ-w6-6Ae" firstAttribute="centerX" secondItem="FsD-vb-ZFw" secondAttribute="centerX" id="drt-gH-iSH"/>
+                            <constraint firstItem="SZr-dx-Q85" firstAttribute="leading" secondItem="FsD-vb-ZFw" secondAttribute="leading" constant="20" id="hmS-Ar-6xn"/>
                             <constraint firstItem="Xx4-WG-tdj" firstAttribute="centerX" secondItem="gKQ-w6-6Ae" secondAttribute="centerX" id="kuE-41-0Hx"/>
+                            <constraint firstItem="uYj-dD-cxd" firstAttribute="leading" secondItem="FsD-vb-ZFw" secondAttribute="leading" constant="20" id="vyJ-zm-0RP"/>
+                            <constraint firstItem="SZr-dx-Q85" firstAttribute="top" secondItem="FsD-vb-ZFw" secondAttribute="top" constant="20" id="wyc-kQ-hlu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FsD-vb-ZFw"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="SZr-dx-Q85" id="g9q-Jq-p43"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7m-ZV-EfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="100"/>
+            <point key="canvasLocation" x="138.75" y="99.295774647887328"/>
         </scene>
     </scenes>
 </document>
