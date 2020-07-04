@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LuM-as-Fca">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="UVY-QL-VZB">
+            <objects>
+                <viewController storyboardIdentifier="LFGSignInViewController" id="LuM-as-Fca" customClass="LFGSignInViewController" customModule="LearnFullGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vvf-sF-BxC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vq2-b3-5zV">
+                                <rect key="frame" x="50" y="212" width="220" height="144"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKU-Yv-KEf">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ohw-Bu-eif">
+                                        <rect key="frame" x="0.0" y="54" width="220" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTh-gx-byA">
+                                        <rect key="frame" x="0.0" y="108" width="220" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="SignIn">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInBtnAction:" destination="LuM-as-Fca" eventType="touchUpInside" id="cuI-CR-aO9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vq2-b3-5zV" firstAttribute="centerX" secondItem="KT9-oR-pOx" secondAttribute="centerX" id="46s-ON-TQu"/>
+                            <constraint firstItem="vq2-b3-5zV" firstAttribute="centerY" secondItem="KT9-oR-pOx" secondAttribute="centerY" id="Akt-RZ-ujG"/>
+                            <constraint firstItem="KT9-oR-pOx" firstAttribute="trailing" secondItem="vq2-b3-5zV" secondAttribute="trailing" constant="50" id="KM9-A6-ZuQ"/>
+                            <constraint firstItem="vq2-b3-5zV" firstAttribute="leading" secondItem="KT9-oR-pOx" secondAttribute="leading" constant="50" id="hdD-uD-Ux8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KT9-oR-pOx"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTxtFld" destination="Ohw-Bu-eif" id="o1m-YC-7ws"/>
+                        <outlet property="userNameTxtFld" destination="IKU-Yv-KEf" id="IMA-Nu-nhj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9z-pd-TbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="142"/>
+        </scene>
+    </scenes>
+</document>

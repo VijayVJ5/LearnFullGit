@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fCy-HX-e1A">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="61V-w1-1fT">
+            <objects>
+                <viewController storyboardIdentifier="LFGHomeViewController" id="fCy-HX-e1A" customClass="LFGHomeViewController" customModule="LearnFullGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aIO-ZR-gYH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKQ-w6-6Ae">
+                                <rect key="frame" x="114" y="273.5" width="92" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kTT-LK-c1u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx4-WG-tdj">
+                                <rect key="frame" x="110" y="344.5" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.2384588289" green="0.826175463" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="eHO-8f-iC7"/>
+                                    <constraint firstAttribute="height" constant="50" id="vX2-dI-q52"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="LogOut">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutBtnAction:" destination="fCy-HX-e1A" eventType="touchUpInside" id="0be-2p-Qwv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gKQ-w6-6Ae" firstAttribute="centerY" secondItem="FsD-vb-ZFw" secondAttribute="centerY" id="CcD-C7-GoW"/>
+                            <constraint firstItem="Xx4-WG-tdj" firstAttribute="top" secondItem="gKQ-w6-6Ae" secondAttribute="bottom" constant="50" id="XAm-VY-ne0"/>
+                            <constraint firstItem="gKQ-w6-6Ae" firstAttribute="centerX" secondItem="FsD-vb-ZFw" secondAttribute="centerX" id="drt-gH-iSH"/>
+                            <constraint firstItem="Xx4-WG-tdj" firstAttribute="centerX" secondItem="gKQ-w6-6Ae" secondAttribute="centerX" id="kuE-41-0Hx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FsD-vb-ZFw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7m-ZV-EfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="100"/>
+        </scene>
+    </scenes>
+</document>
