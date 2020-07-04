@@ -15,10 +15,15 @@ class LFGHomeViewController: UIViewController {
         
     }
     
-    @IBAction func logoutBtnAction(_ sender: UIButton)
+    func logoutFunc()
     {
         UserDefaults.standard.set(false, forKey: LFGConstants.isSigInDef)
         LFGConstants.appDelegate.setUpInitialViewController()
+    }
+    
+    @IBAction func logoutBtnAction(_ sender: UIButton)
+    {
+        self.logoutFunc()
     }
     
     
